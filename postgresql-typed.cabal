@@ -143,3 +143,14 @@ benchmark bench
     network,
     criterion,
     postgresql-typed
+
+executable select-threaded
+  hs-source-dirs: app
+  main-is: select-threaded.hs
+  ghc-options: -threaded
+               -rtsopts
+               -with-rtsopts=-N
+  build-depends: base
+               , postgresql-typed
+               , bytestring
+               , deepseq
