@@ -79,7 +79,6 @@ Library
     Database.PostgreSQL.Typed.Range
     Database.PostgreSQL.Typed.Inet
     Database.PostgreSQL.Typed.Dynamic
-    Database.PostgreSQL.Typed.TemplatePG
     Database.PostgreSQL.Typed.SQLToken
     Database.PostgreSQL.Typed.ErrCodes
     Database.PostgreSQL.Typed.Relation
