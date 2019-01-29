@@ -588,7 +588,7 @@ pgConnect db = do
   pgFlush c
   conn c
   where
-  defai = Net.defaultHints{ Net.addrSocketType = Net.Stream }
+  defai = Net.defaultHints{ Net.addrSocketType = Net.Stream, Net.addrFlags = [Net.AI_ADDRCONFIG] }
   conn c = pgRecv c >>= msg c
   msg c (Right RecvSync) = do
     cp <- readIORef (connParameters c)
